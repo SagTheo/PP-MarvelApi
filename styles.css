@@ -1,3 +1,77 @@
 .description {
     font-family: 'Bangers', cursive;
+    padding-top: 0.3rem;
+}
+
+*:not(.description) {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style for the input section */
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input {
+    margin-bottom: 0.2rem;
+}
+
+input, button, .attribution {
+    padding: 0.2rem;
+}
+
+button {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+/* Style for the result section */
+.result {
+    text-align: center;
+}
+
+.charInfo {
+    display: none;
+    background-color: gainsboro;
+    padding: 0 0.3rem;
+    border-radius: 5px;
+}
+
+.comics {
+    text-align: left;
+    list-style: none;
+    padding-bottom: 0.3rem;
+}
+
+.comics li span {
+    vertical-align: top;
+}
+
+.attribution {
+    display: none;
+    background-color: black;
+    color: white;
+}
+
+/* Responsiveness */
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .introList {
+        text-align: left;
+    }
+}
+
+@media (min-width: 769px) {
+    .introList {
+        text-align: left;
+    }
+
+    .result {
+        width: 60%;
+        margin: 0 auto;
+    }
 }

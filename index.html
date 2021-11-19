@@ -12,14 +12,21 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <label for="userInput">Enter a Marvel character's name</label>
-    <input type="text" id="userInput" name="userInput">
-    <button>Search</button>
+    <div class="input">
+        <label for="userInput">Enter a Marvel character's name</label>
+        <input type="text" id="userInput" name="userInput">
+        <button>SEARCH</button>
+    </div>
 
-    <p class="err"></p>
-    <p class="description"></p>
-    <p class="introList"></p>
-    <ul class="comics"></ul>
-    <p class="attribution"></p>
+    <div class="result">
+        <p class="err"></p>
+        <div class="charInfo">
+            <p class="description"></p>
+            <p class="introList"></p>
+            <ul class="comics"></ul> 
+        </div>
+        
+        <p class="attribution"></p>
+    </div>   
 </body>
 </html>
